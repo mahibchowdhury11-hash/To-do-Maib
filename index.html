@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title>To-Do Maib</title>
+        <link rel="stylesheet" href="style.css"> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    </head>
+
+    <body>
+   <nav class="topbar">
+
+    <h1>To-do Maib</h1>
+    
+        <div class="subtitles">
+            <p>Your own space for Tasks.</p>
+        </div>
+
+    </nav>
+
+    <main class="body1">
+        <div class="start">
+
+            <h2>Keep track of Work</h2>
+            <p>Don't forget about that thing your forgetting. With To-Do Maib</p>
+
+        </div>
+
+        <section class="stats">
+            <div class="stat-display">
+                <h3 id="finished">0</h3>
+                <h4>Completed.</h4>
+            </div>
+
+            <div class="stat-display">
+                <h3 id="unfinished">0</h3>
+                <h4>Incompleted.</h4>
+            </div>
+
+        </section>
+
+        <section class="tasks">
+            <h2>Add a new Task!</h2>
+
+            <form id="form">
+                <input
+                    type="text" 
+                    id="task-input" 
+                    placeholder="What are you doing today?" 
+                    required maxlength="100"
+                >
+
+                <section id="category-input">
+                    <option value="School">School</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Work">Work</option>
+                    <option value="Coding">Coding</option>
+
+                    <div id="list">
+                        <!--The tasks will be here. Okay-->
+                    </div>
+
+                    <p id="empty-message">No tasks yet. Add your first text!</p>
+
+                </section>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>To-do Maib © | Keep Working!</p>
+    </footer>
+
+<script src="script.js"></script>
+
+    </body>
+ </html>
