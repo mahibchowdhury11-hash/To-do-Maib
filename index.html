@@ -47,16 +47,36 @@
                     type="text" 
                     id="task-input" 
                     placeholder="What are you doing today?" 
-                    required maxlength="100"
+                    required 
+                    maxlength="100"
                 >
 
-                <section id="category-input">
+                <select id="category-input">
                     <option value="School">School</option>
                     <option value="Personal">Personal</option>
                     <option value="Work">Work</option>
                     <option value="Coding">Coding</option>
+                </select>
 
-                    <div id="list">
+
+                <button type="submit">+ Add Task</button>
+            </form>
+
+        </section>
+
+        <section class="task-section">
+
+            <h2>Your Tasks</h2>
+
+            <div class="filters">
+                <button class="filter active" data-filter="All">All</button>
+                <button class="filter" data-filter="School">School</button>
+                <button class="filter" data-filter="Personal">Personal</button>
+                <button class="filter" data-filter="Coding">Coding</button>
+            </div>
+            
+
+                    <div id="submit">
                         <!--The tasks will be here. Okay-->
                     </div>
 
