@@ -1,24 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background: #10101a;
-    color: #f5f5ff;
-    min-height: 100vh;
+    background-color: #501212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
 }
 
 .topbar {
-    background: #191927;
-    padding: 22px 8%;
+    background-color: #a83939;
+    padding: 20px;
     border-bottom: 1px solid #303047;
 }
 
 .topbar h1 {
-    color: #a78bfa;
+    color: #f30000;
     font-size: 28px;
 }
 
@@ -28,18 +23,12 @@ body {
 }
 
 .body1 {
+    width: 90%;
     max-width: 950px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.start {
-    margin-bottom: 30px;
 }
 
 .start h2 {
     font-size: 30px;
-    margin-bottom: 8px;
 }
 
 .start p {
@@ -48,15 +37,13 @@ body {
 
 .stats {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 18px;
-    margin-bottom: 35px;
 }
 
 .stat-display {
-    background: #1c1c2c;
-    border: 1px solid #303047;
-    border-radius: 12px;
+    background-color: #5a0e0e;
+    border: 1px solid #df1f06;
     padding: 22px;
     text-align: center;
 }
@@ -69,22 +56,12 @@ body {
 .stat-display h4 {
     color: #aaaabd;
     font-size: 14px;
-    margin-top: 5px;
-    font-weight: normal;
 }
 
-.tasks,
-.task-section {
-    background: #191927;
-    border: 1px solid #303047;
-    border-radius: 14px;
+.tasks, .task-section {
+    background-color: #976a09;
+    border: 1px solid #721212;
     padding: 25px;
-    margin-bottom: 25px;
-}
-
-.tasks h2,
-.task-section h2 {
-    margin-bottom: 20px;
 }
 
 #task-form {
@@ -94,77 +71,61 @@ body {
 }
 
 input, select {
-    background: #252538;
+    background-color: #252538;
     border: 1px solid #41415a;
     color: white;
     padding: 13px;
-    border-radius: 8px;
     font-size: 14px;
 }
 
 input {
     flex: 1;
-    min-width: 180px;
-}
-
-select {
-    cursor: pointer;
 }
 
 button {
-    border: none;
-    border-radius: 8px;
-    padding: 12px 18px;
-    background: #8b5cf6;
+    background-color: #8b5cf6;
     color: white;
-    font-weight: bold;
+    border: none;
+    padding: 12px 18px;
     cursor: pointer;
-    transition: 0.2s;
 }
 
 button:hover {
-    background: #7041dc;
+    background-color: #7041dc;
 }
 
 .filters {
     display: flex;
     gap: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
 }
 
 .filter {
-    background: #29293c;
+    background-color: #29293c;
 }
 
 .filter.active {
-    background: #8b5cf6;
+    background-color: #8b5cf6;
 }
 
 .task-item {
     display: flex;
     align-items: center;
     gap: 12px;
-    background: #252538;
+    background-color: #252538;
     padding: 16px;
-    border-radius: 9px;
-    margin-bottom: 12px;
 }
 
 .task-info {
     flex: 1;
-    min-width: 0;
 }
 
 .task-info h3 {
     font-size: 15px;
-    overflow-wrap: anywhere;
 }
 
 .task-info p {
     color: #aaaabd;
     font-size: 12px;
-    margin-top: 5px;
 }
 
 .task-item.completed h3 {
@@ -172,22 +133,12 @@ button:hover {
     color: #85859b;
 }
 
-.task-item input[type="checkbox"] {
-    flex: none;
-    min-width: auto;
-    width: 18px;
-    height: 18px;
-    accent-color: #8b5cf6;
-    cursor: pointer;
-}
-
 .delete-btn {
-    background: #542b39;
-    padding: 9px 12px;
+    background-color: #e63b74;
 }
 
 .delete-btn:hover {
-    background: #873b50;
+    background-color: #873b50;
 }
 
 #empty-message {
@@ -201,24 +152,4 @@ footer {
     padding: 25px;
     color: #77778c;
     font-size: 13px;
-}
-
-@media (max-width: 600px) {
-    .stats {
-        grid-template-columns: 1fr;
-    }
-
-    #task-form {
-        flex-direction: column;
-    }
-
-    #task-form input,
-    #task-form select,
-    #task-form button {
-        width: 100%;
-    }
-
-    .task-item {
-        flex-wrap: wrap;
-    }
 }
