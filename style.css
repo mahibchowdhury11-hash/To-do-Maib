@@ -61,6 +61,12 @@ body {
     padding: 25px;
 }
 
+.due-date, .task-section {
+    background-color: #976a09;
+    border: 1px solid #721212;
+    padding: 25px;
+}
+
 #task-form {
     display: flex;
     gap: 12px;
