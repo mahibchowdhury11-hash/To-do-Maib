@@ -7,21 +7,18 @@ body {
     background-color: #a83939;
     padding: 20px;
     border-bottom: 1px solid #303047;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 .topbar h1 {
     color: #f30000;
-    font-size: 28px;
+    font-size: 30px;
 }
 
 .subtitles {
     color: #9999ad;
-    font-size: 13px;
-}
-
-.body1 {
-    width: 90%;
-    max-width: 950px;
+    font-size: 15px;
 }
 
 .start h2 {
@@ -36,6 +33,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 18px;
+    margin: 100px;
 }
 
 .stat-display {
@@ -43,6 +41,8 @@ body {
     border: 1px solid #df1f06;
     padding: 22px;
     text-align: center;
+    margin: 100px;
+    border-radius: 10px;
 }
 
 .stat-display h3 {
@@ -59,12 +59,16 @@ body {
     background-color: #976a09;
     border: 1px solid #721212;
     padding: 25px;
+    margin: 100px;
+    border-radius: 10px;
 }
 
 .due-date, .task-section {
     background-color: #976a09;
     border: 1px solid #721212;
     padding: 25px;
+    margin: 100px;
+    border-radius: 10px;
 }
 
 #task-form {
@@ -89,11 +93,14 @@ button {
     background-color: #fd0000;
     color: white;
     border: none;
-    padding: 50px 40px;
+    padding: 50px 50px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
 }
 
 button:hover {
     background-color: #ff0202;
+    border-radius: 50px;
 }
 
 .filters {
@@ -105,9 +112,11 @@ button:hover {
     background-color: #29293c;
 }
 
+
 .filter.active {
     background-color: #fd0202;
 }
+
 
 .task-item {
     display: flex;
@@ -115,10 +124,6 @@ button:hover {
     gap: 12px;
     background-color: #252538;
     padding: 16px;
-}
-
-.task-info {
-    flex: 1;
 }
 
 .task-info h3 {
@@ -154,4 +159,15 @@ footer {
     padding: 25px;
     color: #77778c;
     font-size: 13px;
+}
+
+.search-bar {
+    margin-top: 33px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    flex: 1; 
+    padding: 50px;
 }
