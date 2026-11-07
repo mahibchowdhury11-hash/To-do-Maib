@@ -56,6 +56,27 @@
                 </form>
             </section>
 
+            <section class="due-date">
+                <h2>When is your task due?</h2>
+
+                <form id="task-form">
+                <input 
+                    type="text"
+                    id="task-input"
+                    placeholder="When do you want it done?"
+                    required
+                    maxlength="100"
+                >
+
+                <select id="category-input">
+                    <option value="high">High Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="low">Low Priority</option>
+                </select>
+
+                <button type="submit">+ Due date</button>
+            </section>
+
             <section class="task-section">
                 <h2>Your Tasks</h2>
 
