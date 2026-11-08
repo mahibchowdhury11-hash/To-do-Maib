@@ -38,10 +38,10 @@
 
                 <form id="task-form">
                     <input
-                        type="text" 
-                        id="task-input" 
-                        placeholder="What are you doing today?" 
-                        required 
+                        type="text"
+                        id="task-input"
+                        placeholder="What are you doing today?"
+                        required
                         maxlength="100"
                     >
 
@@ -52,29 +52,16 @@
                         <option value="Coding">Coding</option>
                     </select>
 
+                    <input type="date" id="date-input">
+
+                    <select id="priority-input">
+                        <option value="High">High Priority</option>
+                        <option value="Medium">Medium Priority</option>
+                        <option value="Low">Low Priority</option>
+                    </select>
+
                     <button type="submit">+ Add Task</button>
                 </form>
-            </section>
-
-            <section class="due-date">
-                <h2>When is your task due?</h2>
-
-                <form id="task-form">
-                <input 
-                    type="text"
-                    id="task-input"
-                    placeholder="When do you want it done?"
-                    required
-                    maxlength="100"
-                >
-
-                <select id="category-input">
-                    <option value="high">High Priority</option>
-                    <option value="medium">Medium Priority</option>
-                    <option value="low">Low Priority</option>
-                </select>
-
-                <button type="submit">+ Due date</button>
             </section>
 
             <section class="task-section">
@@ -86,17 +73,17 @@
                     <button class="filter" data-filter="Personal">Personal</button>
                     <button class="filter" data-filter="Work">Work</button>
                     <button class="filter" data-filter="Coding">Coding</button>
-            </div>
-            
-        <div class="search-bar">
-           <input 
-                type="text"
-                placeholder="Which task will you work on?"
-                maxlength="100"
-            >
-        </div>
+                </div>
 
-            <div id="task-list">
+                <div class="search-bar">
+                    <input
+                        type="text"
+                        id="search-input"
+                        placeholder="Which task will you work on?"
+                    >
+                </div>
+
+                <div id="task-list">
                     <!--The tasks will be here. Okay-->
                 </div>
 
