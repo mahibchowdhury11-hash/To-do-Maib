@@ -112,11 +112,9 @@ button:hover {
     background-color: #29293c;
 }
 
-
 .filter.active {
     background-color: #fd0202;
 }
-
 
 .task-item {
     display: flex;
@@ -154,7 +152,6 @@ button:hover {
     padding: 20px;
 }
 
-
 footer {
     text-align: center;
     padding: 25px;
@@ -162,16 +159,13 @@ footer {
     font-size: 13px;
 }
 
-
 .search-bar {
     margin-top: 33px;
     width: 100%;
 }
 
-
 .search-bar input {
     width: 100%;
     padding: 15px;
     box-sizing: border-box;
-    padding: 50px;
 }
