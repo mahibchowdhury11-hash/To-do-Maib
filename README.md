@@ -1,9 +1,5 @@
 Hey welcome to my repository, MY website is a To-do list
 
-Falling behind on tasks because your forgetting to do them? Well just use my website
-It was meant exactly for that, for example I kept forgetting to do my weekly coding but I will 
-start using this website after I finish it. To use the website(after its finished), just type in your task into the bar
-and select a catagory(school, personal, and more) then click add task. Now you have that task you have been forgetting to do
-added to the tasks section.
+I created a website that is a To-Do list. If you want a way to keep track of your work but keep forgetting just note it down on my website. All you need to do is Type in your task, type in the date, choose if it is a personal, school, work, or coding task. Choose the priority. Then click add task. Now you have your task added. Even if there are better alternatives this is almost always an option.
 
 Have fun with my website!
